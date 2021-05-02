@@ -15,7 +15,7 @@ html {
 body
 { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   height: 100%;
-  font-size: 1.2em;
+  font-size: 1em;
   background: white;
   color: #555;}
 
@@ -61,7 +61,7 @@ ul li div
 
 /* ------------------------------- Header --------------------------------*/
 #logo
-{ 	min-width: 40em;
+{ min-width: 40em;
   max-width: 50em; 
   background-color: black;
   min-height: 8em;
