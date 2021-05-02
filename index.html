@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Mart&iacute;n Abreu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="author" content="Martin Abreu Zavaleta" /><meta name="desciption" content="I am a philosopher. I specialize in philosophy of language, but I'm also interested in the points where it intersects with philosophy of mind, semantics, and developmental psychology." /><meta name="keywords"  content="Martin Abreu, Martin Abreu philosophy, Martin Abreu Zavaleta" /><meta name="Resource-type" content="Document" />
+	<link href="https://martinabreu.net/favicon.ico?v=005" rel="shortcut icon" type="image/x-icon" />
+	<link href="new.css" media="screen and (min-width:700px)" rel="stylesheet" type="text/css" />
+	<link href="style-mobile.css" media="screen and (max-width:700px)" rel="stylesheet" type="text/css" /><script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53632616-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script>
+$(document).ready(function() {
+  $(document).on("scroll", onScroll);
+
+  //smoothscroll
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    $(document).off("scroll");
+
+    $('a').each(function() {
+      $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+
+    var target = this.hash,
+      menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top + 2
+    }, 500, 'swing', function() {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
+    });
+  });
+});
+
+function onScroll(event) {
+  var scrollPos = $(document).scrollTop();
+  $('nav li a').each(function() {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('nav ul li a').removeClass("active");
+      currLink.addClass("active");
+    } else {
+      currLink.removeClass("active");
+    }
+  });
+};
+</script><script>
+	$(function(){
+
+  $('#abstract a').each(function(){
+      $(this).click(function(){
+          $(this).siblings('div').slideToggle(300);            
+      });        
+  });                
+
+});
+   </script>
+
+   
+</head>
+<body>
+<div id="logo">
+<div class="center" id="logo_text">
+<h1>Mart&iacute;n<span class="alternate_color"> Abreu Zavaleta</span></h1>
+</div>
+</div>
+
+<nav>
+<ul id="drop">
+	<li><a class="active" href="#first">Home</a></li>
+	<li><a href="#research">Research</a></li>
+	<li><a href="#cv" onclick="window.open('/cv.pdf')">CV</a></li>
+	<li><a href="#teaching">Teaching</a></li>
+	<li><a href="#random">Random</a></li>
+</ul>
+</nav>
+
+<div class="site_content">
+
+<h1 class="header" id="first">About me</h1>
+
+<p>
+<img src="picture.jpg" alt="Mart&iacute;n Abreu Zavaleta" style="float:right;width:250px;height:250px;padding:3px;">
+I am a Postdoctoral Fellow at <a href="https://www.umu.se/en/department-of-historical-philosophical-and-religious-studies/">Umea&#778; Univesity</a>. I graduated from NYU in 2018, where I was one of the organizers of the <a href="http://nylanguageworkshop.tumblr.com/">New York Philosophy of Language Workshop</a>. I am also a member of the <a href="https://www.apaonline.org/group/hispanic">APA Committee on Hispanics</a>, and the editor of PhilPapers&#39; category on <a href="https://philpapers.org/browse/speech-reports">speech reports</a>. I specialize in philosophy of language, and I am interested in the points where it intersects with philosophy of mind, semantics, and developmental psychology. I am also a big fan of Thomas Reid.</p>
+
+<p>My main research focuses on the consequences of the thesis I call <i>semantic variance</i> and develops new accounts of communication, disagreement, attitude ascriptions, and linguistic competence. If you are intrigued, email me at: <a href="mailto:martin.abreu@umu.se">martin.abreu@umu.se</a></p>
+
+<p>My full last name is "Abreu Zavaleta". Kindly cite my work accordingly&mdash; i.e. as "Abreu Zavaleta, Mart&iacute;n"</p>
+
+<span id="cv"> </span>
+
+<h1 class="header" id="research">Research</h1>
+<h2 class="header">Completed</h2>
+<p>By year of acceptance, most recent first.</p>
+
+<ul id="abstract">
+	<li><a href="https://doi.org/10.1007/s11229-020-02866-y" onclick="ga('send', 'event', 'Disagreement Lost');">Disagreement Lost</a>. 2020. <i>Synthese</i> (<a>Abstract</a>, open access)
+		<div>
+			<p><br />
+			This paper develops a puzzle about not-merely-verbal disputes. At first sight, it would seem that a dispute over the truth of an utterance is not merely verbal only if there is a proposition that the parties to the dispute take the utterance under dispute to express, which one of the parties accepts and the ohter rejects. Yet, as I argue, it is extremely rare for ordinary disputes over an utterance’s truth to satisfy this condition, in which case non-merely verbal disputes are extremely rare. The consequences of the puzzle are twofold: on the one hand, it suggests we should reject seemingly natural accounts of what it is for a dispute not to be merely verbal; on the other, it suggests that the kind of problems of lost disagreement typically raised against contextualism arise for nearly everyone. After examining various responses to the puzzle, I outline a solution using the framework of truthmaker semantics.
+			</p>
+		</div>
+	</li>
+	<li><a href="https://doi.org/10.1590/0100-6045.2020.v43n4.mx" onclick="ga('send', 'event', 'GT reference');">G&oacute;mez-Torrente on reference to ordinary substances.</a> 2020 <i>Manuscrito,</i> book symposium on <i>Roads to Reference</i> (<a>Abstract</a>, open access)
+	    <div>
+	    <p><br />
+	       This note discusses G&oacute;mez-Torrente's solution to the arbitrariness problem for the Kripke-Putnam account of natural kind terms. 
+	    </p>
+	    </div>
+	</li>
+	<li><a href="https://doi.org/10.1111/mila.12259">Communication and indifference</a>. 2019. <i>Mind &amp; Language</i> (<a>Abstract</a>, <a href="/research/communication-indifference-preprint.pdf" onclick="ga('send', 'event', 'Communication and Indifference');">Pre-print</a>)
+		<div>
+			<p><br />
+According to the propositional view of communication, every literal assertoric utterance of an indicative sentence expresses a proposition; communication by means of such an utterance is successful only if the audience entertains the proposition(s) the speaker expressed. This view entails that, for every assertoric utterance of an indicative sentence, there is a proposition the audience must entertain in order for communication to be successful. According to a recent objection by Ray Buchanan, because the linguistic meaning of certain sentences involving quantifiers and definite descriptions underdetermines which proposition the utterance expresses, oftentimes there is no particular proposition the audience must entertain in order for communication to be successful. Using resources from situation semantics and MacFarlane's nonindexical contextualism, this paper develops a view of literal communication in the vicinity of the propositional view, but which is not susceptible to Buchanan's underdeterminacy considerations. Furthermore, as I argue, the proposed view accounts for the kind of indifference which, according to Buchanan, typically characterizes speakers' intentions.</p>
+		</div>
+	</li>
+
+	<li><a href="https://link.springer.com/article/10.1007/s11245-019-09648-3">Communication and Variance</a>. 2019. <i>Topoi</i> (<a>Abstract</a>, <a href="/research/communication-variance-preprint.pdf" onclick="ga('send', 'event', 'Communication and Variance');">Pre-print</a>)
+	<div>
+	<p><br />
+	According to standard assumptions in semantics, (a) ordinary users of a language have implicit beliefs about the truth-conditions of sentences in that language, and (b) they often agree on those beliefs. For example, it is assumed that if Anna and John are both competent users of English and the former utters `grass is green&#39; in conversation with the latter, they will both believe that that sentence is true if and only if grass is green. These assumptions play an important role in an intuitively compelling picture of communication, according to which successful communication through literal assertoric utterances is normally effected thanks to our shared beliefs about the truth-conditions of the sentences uttered in the course of the conversation. Against these standard assumptions, this paper argues that the participants in a conversation rarely have the same beliefs about the truth-conditions of the sentences involved in a linguistic interaction. More precisely, it argues for <i>Variance</i>, the thesis that, for most linguistic interactions and most sentences used in those interactions, there is no proposition such that all the participants in the interaction believe that the sentence as it was used in the interaction is true if and only if that proposition is true. If <i>Variance</i> is true, we must reject the standard picture of communication. Towards the end of the paper I identify three ways in which ordinary conversations can be communication-like despite the truth of Variance and argue that the most natural amendments of the standard picture fail to explain them.</p>
+	</div>
+	</li>
+	<li><a href="https://link.springer.com/article/10.1007%2Fs11098-018-1119-2">Weak speech reports</a>. 2018. <i>Philosophical Studies</i> (<a>Abstract</a>, <a href="/research/weak-reports-preprint.pdf" onclick="ga('send', 'event', 'Weak Speech Reports');">Pre-print</a>) 
+	<div>
+	<p><br />
+	Indirect speech reports can be true even if they attribute to the speaker the saying of something weaker than what she in fact expressed, yet not all weakenings of what the speaker expressed yield true reports. For example, if Anna utters `Bob and Carla passed the exam&#39;, we can accurately report her as having said that Carla passed the exam, but we can not accurately report her as having said that either it rains or it does not, or that either Carla passed the exam or pandas are cute. This paper offers an analysis of speech reports that distinguishes weakenings of what the speaker expressed that yield true reports from weakenings that do not. According to this analysis, speech reports are not only sensitive to the informational content of what the speaker expressed, but also to the possibilities a speaker raises in making an utterance. For example, `Anna said that Carla passed the exam or pandas are cute&#39; is not an accurate report of what Anna said by uttering `Bob and Carla passed the exam&#39; because it characterizes Anna as having raised the possibility that pandas are cute, yet Anna did not raise that possibility through her utterance. As I argue, this analysis has important advantages over its most promising competitors, including views based on work by Barwise and Perry (1983), views appealing to recent work on the notion of content parthood by Fine (2015) and Yablo(2014), and Richard&#39;s (1998) proposal appealing to structured propositions.</p>
+	</div>
+	</li>
+	<li><a href="/research/semantic-variance.pdf" onclick="ga('send', 'event', 'Semantic Variance');" >Semantic Variance</a>. 2018. PhD thesis. New York University (<a>Abstract</a>)
+		<div> 
+			<p><br />
+I argue for Semantic Variance, the thesis that for nearly every utterance and any two language users, there is no proposition that those two language users believe to be that utterance's truth-conditional content. I argue that Semantic Variance is problematic for standard theories concerning the nature of communication, the epistemic significance of ordinary disputes, and the semantics of speech reports. In response to the problems arising from the truth of Semantic Variance, I develop new accounts of the transmission of relevant information, ordinary disputes, and the semantics of speech reports using truthmaker semantics. Towards the end of the dissertation I outline a pluralistic account about the nature of communication and linguistic competence.
+			</p>
+		</div>
+	</li>
+</ul>
+
+
+<h2 class="header">Under review</h2>
+
+<ul id="abstract">
+    <li>Paper 1 
+<!--	<div>
+	<p><br />We often infer what people believe from what people assert. For example, if Anna asserts 'My house is green', and I believe that she is being sincere and she is a competent speaker, I will infer that Anna believes that her house is green. This paper discusses the justification of those inferences. According to an account stemming from standard views in philosophy of language, my inference is justified because, if Anna is a competent speaker, she will believe that the sentence she asserted means that her house is green; thus, if Anna believes that the sentence is true in the context in which she asserted it, she must believe that her house is green. I argue that typical inferences from assertion to belief can't be justified in this way; on pain of irrationality, normal speakers can't have specific beliefs about the meaning of the sentences they assert. I propose a new view of the justification of inferences from assertion to belief, relying on the view that epistemically responsible speakers assert a certain sentence only if they believe all the propositions which they think that sentence might mean.</p>
+		</div>
+-->
+	</li>
+	
+	<li>A paper about quasi-realism (with H. Bhogal, D. Waxman, M. Zhao)
+	</li>
+<!--    <li> Title (<a>Abstract</a>)
+        <div>
+        <p></br>
+            
+        </p>    
+        </div>
+    </li>
+-->
+</ul>
+
+
+<h2 class="header">In progress</h2>
+
+<p><a href="mailto:martin.abreu@umu.se">Email</a> for drafts.</p>
+
+
+<ul id="abstract">
+	<li>Partial Understanding (<a>Abstract</a>)
+		<div>
+		<p><br />Say that an audience perfectly understands what the speaker meant only if she knows exactly what propositions the speaker meant. Understanding of a speaker's utterances is rarely perfect, but that does not mean we do not understand what the speaker meant at all; very often, we will be in a position to understand what the speaker meant at least in part. This paper offers an account of partial understanding. I claim that the degree to which the audience understands what the speaker meant depends on how much of the information contained in what the speaker meant is also contained in what the audience took the speaker to mean. I flesh out this idea using a version of truthmaker semantics and standard probability theory.</p>
+		</div>
+	</li>
+	<li>Variance, Plasticity, and speech reports (<a>Abstract</a>)
+		<div>
+			<p><br />Dorr and Hawthorne (2014) have argued that speech reports are highly modally plastic: very small changes in microphysical facts can lead to changes in the truth-value of indirect reports. If Dorr and Hawthorne are right, then we are rarely in a position to know that counterfactual speech reports are true. For example, we are rarely in a position to know reports like 'if Anna had come to the party, she would have said that the cake was delicious'. In this paper I show that Semantic Variance leads to a similar problem for what I call <i>homophonic speech reports</i>, reports like 'Anna said that grass is green by uttering 'grass is green''. Uisng truthmaker semantics, I develop an account of homophonic reports that explains why they are so easy to know, and extend that account to solve Dorr and Hawthorne's puzzle of semantic plasticity. Towards the end of the paper I generalize that account to indirect reports more generally.</p>
+		</div>
+	</li>
+</ul>
+
+<h2 class="header">Talks</h2>
+
+<p><a href="mailto:martin.abreu@umu.se">Email</a> for handouts</p>
+
+<ul id="abstract">
+	<li>Operators of structural enrichment (<a>Abstract</a>, <a href="/research/ose.hs">Haskell code</a>)
+	<div>
+	<p><br />
+	It is customary to think of the semantic values of declarative sentences as unstructured sets of possible worlds. However, for the purposes of the semantics of attitude ascriptions, it is advantageous to think that the semantic values of that-clauses embedding declarative sentences are more fine-grained entities: structured propositions. Prima facie, and given the assumption that ordinary language is compositional, these two approaches seem incompatible: once we compute the semantic value of a sentence embedded in a that-clause, all we have is a set of possible worlds from which no further structure can be recovered. It is thus mysterious how the semantic value of a that-clause could be a structured proposition even though the semantic value of the embedded sentence is just a set of possible worlds. In this talk I argue that we can solve the mystery by introducing a new kind of operator, which I call an operator of structural enrichment, and I offer a recursive semantics for a language containing such an operator. The resulting semantics vindicates Cresswell&#39;s (1985) claim that unembedded sentences denote sets of possible worlds and that-clauses denote structured propositions, and the general use of structured propositions in contemporary semantic theory.</p>
+	</div>
+	</li>
+</ul>
+
+<h1 class="header" id="teaching">Teaching</h1>
+
+<ul id="abstract">
+	<li>Central Problems of Philosophy, Summer 2015 (<a href="/teaching/central-problems/Syllabus.pdf">Syllabus</a>, <a>lecture notes</a>)
+
+	<div>
+	<ul class="courses">
+		<li class="page"><a href="/teaching/central-problems/lecture1.html">1. Introduction</a> (<a href="teaching/central-problems/lecture1.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture2.html">2. The human good</a> (<a href="teaching/central-problems/lecture2.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture3.html">3. Aristotle&#39;s account of the good</a> (<a href="teaching/central-problems/lecture2.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture4.html">4. Virtue</a> (<a href="teaching/central-problems/lecture4.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture5.html">5. Varieties of consequentialism</a> (<a href="teaching/central-problems/lecture5.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture6.html">6. Railton: Alienation, consequentialism, and the demands of morality</a> (<a href="teaching/central-problems/lecture6.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture7.html">7. Wolf and Nagel on the meaning of life</a> (<a href="teaching/central-problems/lecture7.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture8.html">8. Is death bad?</a> (<a href="teaching/central-problems/lecture8.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture9.html">9. Williams on the tedium of immortality</a> (<a href="teaching/central-problems/lecture9.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture10.html">10. Locke on personal identity</a> (<a href="teaching/central-problems/lecture10.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture11.html">11. More on personal identity (1)</a> (<a href="teaching/central-problems/lecture11.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture12.html">12. More on personal identity (2)</a> (<a href="teaching/central-problems/lecture12.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture13.html">13. Frege on sense and reference (1)</a> (<a href="teaching/central-problems/lecture13.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture14.html">14. Frege on sense and reference (2)</a> (<a href="teaching/central-problems/lecture14.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture15.html">15. Russell on definite descriptions</a> (<a href="teaching/central-problems/lecture15.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture16.html">16. Kripke&#39;s objections to Russell&#39;s theory of names</a> (<a href="teaching/central-problems/lecture16.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture17.html">17. Perry on De Se belief attributions</a> (<a href="teaching/central-problems/lecture17.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture18.html">18. Substance Dualism</a> (<a href="teaching/central-problems/lecture18.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture19.html">19. An argument against dualism; the Turing test</a> (<a href="teaching/central-problems/lecture19.pdf">PDF</a>)</li>
+	</ul>
+	</div>
+	</li>
+	<li>Philosophy of Mind, Summer 2014 (<a id="">Syllabus</a>, <a>lecture notes</a>)
+	<div>
+	<ul class="courses">
+		<li class="page"><a href="/teaching/philmind/lecture1.html">1. What is philosophy of mind?</a> (<a href="teaching/philmind/lecture1.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture2.html">2. Substance dualism (1)</a> (<a href="teaching/philmind/lecture2.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture3.html">3. Substance dualism (2)</a> (<a href="teaching/philmind/lecture2.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture4.html">4. Identity theory</a> (<a href="teaching/philmind/lecture4.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture5.html">5. An argument against dualism and the Turing test</a> (<a href="teaching/philmind/lecture5.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture6.html">6. Behaviorism</a> (<a href="teaching/philmind/lecture6.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture7.html">7. Introducing functionalism</a> (<a href="teaching/philmind/lecture7.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture8.html">8. More on machine functionalism</a> (<a href="teaching/philmind/lecture8.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture9.html">9. David Lewis: Psychophysical and theoretical identifications</a> (<a href="teaching/philmind/lecture9.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture10.html">10. Block&#39;s objections to functionalism</a> (<a href="teaching/philmind/lecture10.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture11.html">11. Lewis defends commonsense functionalism</a> (<a href="teaching/philmind/lecture11.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture12.html">12. Mental causation</a> (<a href="teaching/philmind/lecture12.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture13.html">13. Intentionality as the mark of the mental</a> (<a href="teaching/philmind/lecture13.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture14.html">14. Dretske: A recipe for thought</a> (<a href="teaching/philmind/lecture14.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture15.html">15. Millikan: Biosemantics</a> (<a href="teaching/philmind/lecture15.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture16.html">16. Inferentialism</a> (<a href="teaching/philmind/lecture16.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture17.html">17. Tying it up: thoughts and intentionality</a> (<a href="teaching/philmind/lecture17.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture18.html">18. Propositional attitudes and the language of thought</a> (<a href="teaching/philmind/lecture18.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture19.html">19. The intentional strategy</a> (<a href="teaching/philmind/lecture19.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture20.html">20. Eliminative materialism</a> (<a href="teaching/philmind/lecture20.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture21.html">21. Nagel on conscious experience</a> (<a href="teaching/philmind/lecture21.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture22.html">22. The knowledge argument</a> (<a href="teaching/philmind/lecture22.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture23.html">23. Loar&#39;s response to the knowledge argument</a> (<a href="teaching/philmind/lecture23.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture24.html">24. The extended mind</a> (<a href="teaching/philmind/lecture24.pdf">PDF</a>)</li>
+	</ul>
+	</div>
+	</li>
+</ul>
+&nbsp;
+
+<h1 class="header" id="random">Random</h1>
+
+<h2>BlindIt, an anonymizing script</h2>
+
+<p>I used to ask my students to anonymize their papers by naming their file with just their university ID numbers. Unfortunately, at some point I started to accidentally memorize the ID numbers, which defeated the point of anonymizing the papers in the first place. That&#39;s when I wrote <em>blindIt</em>.</p>
+
+<p>BlindIt is a bash script. It takes all the files in a given folder and renames them with arbitrary numbers. Once the grading is done, you can run blindIt again to assign each file its original name. You can download blindIt <a href="/software/blindIt.zip">here</a> and consult the instructions for usage and installation <a href="/software/README.txt">here</a>.</p>
+
+<p>For the time being, blindIt runs only on Linux and Mac, but I suspect it can be run on Windows using <a href="http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">this</a>. If you&#39;re using OS X El Capitan or newer, you may have problems with the installation script. I&#39;ll fix those problems if there is interest.</p>
+
+<h2>A cat</h2>
+
+<p>I don&#39;t own the rights for this photo, so let me know if you know whom I should credit.</p>
+
+<p><img alt="A cat" border="0" src="/random/cattattoo.jpg" /></p>
+<br />
+<br />
+&nbsp;
+<div id="footer"><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="border-width:0" /></a>
+
+<p>All contents by <a href="mailto:martin.abreu@umu.se" property="cc:Martín Abreu Zavaleta" rel="cc:martinabreu.net" xmlns:cc="http://creativecommons.org/ns#">Mart&iacute;n Abreu Zavaleta</a></p>
+</div>
+</div>
+</body>
+</html>

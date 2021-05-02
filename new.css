@@ -1,0 +1,229 @@
+@CHARSET "ISO-8859-1";
+/**
+{margin= 0;
+padding= 0;}*/
+
+/* ----------------------------- General ------------------------------ */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body
+{ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+  font-size: 1.2em;
+  background: white;
+  color: #555;}
+
+p
+{ margin:0px;
+  padding: 0 0 16px;
+  line-height:1.7em;
+  z-index: 1000;
+}
+
+
+h1
+{ color: #362C20;
+  font: normal 175% "Helvetica Neue Light", Helvetica;
+  position: relative;
+}
+
+h2 {
+	color: #362C20;
+	font: normal 130% "Helvetica Neuew Light", Helvetica;
+}
+
+ul
+{ margin: 2px 0 18px 16px;
+	padding: 0;
+	list-style: disc;
+}
+
+ul li div
+{ display:none;
+}
+
+
+.center
+{ display:block;
+  text-align: center;
+}
+
+.alternate_color
+{ color: #5C8A8A;
+}
+
+
+/* ------------------------------- Header --------------------------------*/
+#logo
+{ 	min-width: 40em;
+  max-width: 50em; 
+  background-color: black;
+  min-height: 8em;
+  position: fixed;
+  top:0;
+  right:0;
+	  left:0;
+	  margin-right: auto;
+	  margin-left: auto;
+   z-index:1000;
+}
+
+#logo_text 
+{ top: 1em;
+  bottom: 1em;
+  left:0;
+  padding-top: 1.6em
+}
+
+#logo h1
+{ font: normal 300% "Helvetica Neue Light", Helvetica, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  letter-spacing: 0.06em;
+  padding-top:12px;
+  color: #FFF;
+  margin: 0;}
+
+/* ---------------------------- Menu bar -------------------------------- */
+
+nav {
+  text-align: center;
+  max-width: 50em;
+  min-width: 40em;
+  height: 3.5em;
+  position: fixed;
+    top: 8em;
+	  right:0;
+	  left:0;
+	  margin-right: auto;
+	  margin-left: auto;
+  background-color: #4C4C4C;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index:1000; 
+}
+
+nav ul {
+	list-style: none;
+	margin-left:auto;
+	margin-right:auto;
+	display: inline-block;
+	border: none;
+}
+
+nav li {
+	display: inline-block;
+	float: left;
+    margin: 8px 0 0 0;
+    padding: 0 5px 0 5px;
+	border:none;
+	list-style:none;
+}
+
+nav li a {
+  letter-spacing: 0.1em;
+  font-size: 105%;
+  height:11px;
+  padding:8px 20px 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block; 
+  border:none;
+}   
+
+nav a:hover{
+  color: #5C8A8A;
+  text-decoration: none !important;
+  border: none;
+}
+
+.active {
+  color: #5C8A8A;
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: black url:"menu.png" center;
+}
+/* ---------------------------- Content --------------------------------- */
+.site_content
+{ max-width: 45em;
+  min-width: 30em;
+  margin: 13.5em auto;
+} 
+
+.site_content p, h1, h2{
+	width:96%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.site_content li {
+	line-height:1.7em;
+	margin-left: 1.2em;
+}
+
+ul.courses {
+	list-style: none;
+	margin-left: auto;
+}
+
+.site_content h1:before {
+	display: block;
+	content: " ";
+	margin-top: -7.5em;
+	height:7.5em;
+	visibility: hidden;
+	pointer-events:all;
+}
+
+.site_content h1{
+	pointer-events:none;
+}
+
+.site_content h1:before a{
+  border-bottom: 1px dotted;
+  color: #444;
+  outline: none;
+  text-decoration: none;
+
+}
+
+.site_content a, a:hover
+{ border-bottom: 1px dotted;
+  color: #444;
+  outline: none;
+  text-decoration: none;
+}
+
+.site_content a:hover
+{ border-bottom: 1px solid;
+}
+
+/* ---------------- FOOTER ------------------------------------*/
+#footer { 
+  text-align: center;
+  position: relative;
+  bottom: 0;
+} 
+
+
+

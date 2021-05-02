@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Mart&iacute;n Abreu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="author" content="Martin Abreu Zavaleta" /><meta name="desciption" content="I'm a PhD student in Philosophy at NYU. I specialize in philosophy of language, and I'm interested in the points where it intersects with philosophy of mind, semantics, and developmental psychology. I'm also a big fan of Thomas Reid." /><meta name="keywords"  content="Martin Abreu, Martin Abreu philosophy, Martin Abreu Zavaleta" /><meta name="Resource-type" content="Document" />
+	<link href="http://martinabreu.net/favicon.ico?v=005" rel="shortcut icon" type="image/x-icon" />
+	<link href="new.css" media="screen and (min-width:700px)" rel="stylesheet" type="text/css" />
+	<link href="style-mobile.css" media="screen and (max-width:700px)" rel="stylesheet" type="text/css" /><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53632616-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script>
+$(document).ready(function() {
+  $(document).on("scroll", onScroll);
+
+  //smoothscroll
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    $(document).off("scroll");
+
+    $('a').each(function() {
+      $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+
+    var target = this.hash,
+      menu = target;
+    $target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': $target.offset().top + 2
+    }, 500, 'swing', function() {
+      window.location.hash = target;
+      $(document).on("scroll", onScroll);
+    });
+  });
+});
+
+function onScroll(event) {
+  var scrollPos = $(document).scrollTop();
+  $('nav li a').each(function() {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('nav ul li a').removeClass("active");
+      currLink.addClass("active");
+    } else {
+      currLink.removeClass("active");
+    }
+  });
+};
+</script><script>
+	$(function(){
+
+  $('#abstract a').each(function(){
+      $(this).click(function(){
+          $(this).siblings('div').slideToggle(300);            
+      });        
+  });                
+
+});
+   </script>
+</head>
+<body>
+<div id="logo">
+<div class="center" id="logo_text">
+<h1>Mart&iacute;n<span class="alternate_color"> Abreu Zavaleta</span></h1>
+</div>
+</div>
+
+<nav>
+<ul id="drop">
+	<li><a class="active" href="#first">Home</a></li>
+	<li><a href="#research">Research</a></li>
+	<li><a href="#cv" onclick="window.open('/cv.pdf')">CV</a></li>
+	<li><a href="#teaching">Teaching</a></li>
+	<li><a href="#random">Random</a></li>
+</ul>
+</nav>
+
+<div class="site_content">
+<h1 class="header" id="first">About me</h1>
+
+<p>I&#39;m a PhD student in Philosophy at NYU. I&#39;m also an organizer emeritus of the <a href="http://nylanguageworkshop.tumblr.com/">New York Philosophy of Language Workshop</a>, and the editor of PhilPapers&#39; category on <a href="https://philpapers.org/browse/speech-reports">speech reports</a>. I specialize in philosophy of language, and I&#39;m interested in the points where it intersects with philosophy of mind, semantics, and developmental psychology. I&#39;m also a big fan of Thomas Reid.</p>
+
+<p>My dissertation argues for the thesis I call <i>semantic variance</i> and explores its consequences for communication, attitude ascriptions, and linguistic competence. If you are intrigued, email me at: <a href="mailto:martin.abreu@nyu.edu">maz275@nyu.edu</a></p>
+
+<p>Following latin american naming conventions, my full last name is "Abreu Zavaleta". Kindly cite my work accordingly&mdash; i.e. as "Abreu Zavaleta, Mart&iacute;n"</p>
+
+I don&#39;t have a middle name. My first name is pronounced mar-TEEN, and my surname is a complex of my father&#39;s (pronounced uh-BREH-oo) and my mother&#39;s (pronounced zah-vah-LEH-tah) surnames.</p>
+<!--<h1>Job market materials</h1>
+<p>
+I'm currently on the job market. Here are my job market materials:
+<ul>
+	<li><a href="/cv.pdf">CV</a></li>
+	<li><a href="/researchstatement.pdf">Research statement</a></li>
+	<li><a href="/communication-variance.pdf">Writing sample</a></li>
+	<li><a href="/teachingportfolio.pdf">Teaching portfolio</a></li>
+</ul>
+</p>
+-->
+
+<h1 class="header" id="research">Research</h1>
+
+<h2>Forthcoming</h2>
+
+<ul id="abstract">
+	<li>Weak Speech Reports. Forthcoming in <i>Philosophical Studies</i> (<a>Abstract</a>) (<a href="/papers/weak-reports-preprint.pdf" onclick="ga('send', 'event', 'Download', 'Paper', 'Weak Speech Reports');">Pre-print</a>)
+
+	<div>
+	<p><br />
+	Indirect speech reports can be true even if they attribute to the speaker the saying of something weaker than what she in fact expressed, yet not all weakenings of what the speaker expressed yield true reports. For example, if Anna utters `Bob and Carla passed the exam&#39;, we can accurately report her as having said that Carla passed the exam, but we can not accurately report her as having said that either it rains or it does not, or that either Carla passed the exam or pandas are cute. This paper offers an analysis of speech reports that distinguishes weakenings of what the speaker expressed that yield true reports from weakenings that do not. According to this analysis, speech reports are not only sensitive to the informational content of what the speaker expressed, but also to the possibilities a speaker raises in making an utterance. For example, `Anna said that Carla passed the exam or pandas are cute&#39; is not an accurate report of what Anna said by uttering `Bob and Carla passed the exam&#39; because it characterizes Anna as having raised the possibility that pandas are cute, yet Anna did not raise that possibility through her utterance. As I argue, this analysis has important advantages over its most promising competitors, including views based on work by Barwise and Perry (1983), views appealing to recent work on the notion of content parthood by Fine (2015) and Yablo(2014), and Richard&#39;s (1998) proposal appealing to structured propositions.</p>
+	</div>
+	</li>
+</ul>
+
+<h2>Under review</h2>
+
+<p>Titles omitted for anonymous review. <a href="mailto:martin.abreu@nyu.edu">Email</a> for current version.</p>
+
+<ul id="abstract">
+	<li>A paper on variance (<a>Abstract</a>)
+
+	<div>
+	<p><br />
+	According to standard assumptions in semantics, (a) ordinary users of a language have implicit beliefs about the truth-conditions of sentences in that language, and (b) they often agree on those beliefs. For example, it is assumed that if Anna and John are both competent users of English and the former utters `grass is green&#39; in conversation with the latter, they will both believe that that sentence is true if and only if grass is green. These assumptions play an important role in an intuitively compelling picture of communication, according to which successful communication through literal assertoric utterances is normally effected thanks to our shared beliefs about the truth-conditions of the sentences uttered in the course of the conversation. Against these standard assumptions, this paper argues that the participants in a conversation rarely have the same beliefs about the truth-conditions of the sentences involved in a linguistic interaction. More precisely, it argues for <i>Variance</i>, the thesis that, for most linguistic interactions and most sentences used in those interactions, there is no proposition such that all the participants in the interaction believe that the sentence as it was used in the interaction is true if and only if that proposition is true. If <i>Variance</i> is true, we must reject the standard picture of communication. Towards the end of the paper I identify three ways in which ordinary conversations can be communication-like despite the truth of Variance and argue that the most natural amendments of the standard picture fail to explain them.</p>
+	</div>
+	</li>
+</ul>
+
+<h2>In progress</h2>
+
+<p><a href="mailto:martin.abreu@nyu.edu">Email</a> for drafts.</p>
+
+<ul id="abstract">
+	<li>Three kinds of communication-likeness (<a>Abstract</a>)
+
+	<div>
+	<p><br />
+	A linguistic interaction may be communication-like in that it allows for the transmission of relevant information between its participants, in that its participants can have certain kinds of non-verbal agreements or disputes aboout the sentences uttered in the course of the interaction, or in that, given the right circumstances, it may put (some of) its participants in a position to achieve certain goals. This paper offers an account of these communication-like features in cases of semantic variance using tools from truthmaker semantics (Fine, Yablo). I use those tools to define a new notion of entailment, which I call <i>relevant entailment</i>, and two new equivalence relations between propositions, which I call <i>descriptive</i> and <i>practical</i> equivalence, respectively. I use these new notions to account for the aforementioned communication-like features a conversation may have. The resulting accounts of those communication-like features do not appeal to the notion of common ground or to the assumption that the participants in a conversation have shared beliefs about the truth-conditions of the utterances involved in their interaction. Thus, the discussion suggest that common ground and shared beliefs about truth-conditions play a much less prominent role in explaining communication than has traditionally been assumed.</p>
+	</div>
+	</li>
+</ul>
+
+<h2 class="header">Talks</h2>
+
+<p><a href="mailto:martin.abreu@nyu.edu">Email</a> for handouts</p>
+
+<ul id="abstract">
+	<li>Operators of structural enrichment (<a>Abstract</a>) (<a href="/research/ose.hs">Haskell code</a>)
+
+	<div>
+	<p><br />
+	It is customary to think of the semantic values of declarative sentences as unstructured sets of possible worlds. However, for the purposes of the semantics of attitude ascriptions, it is advantageous to think that the semantic values of that-clauses embedding declarative sentences are more fine-grained entities: structured propositions. Prima facie, and given the assumption that ordinary language is compositional, these two approaches seem incompatible: once we compute the semantic value of a sentence embedded in a that-clause, all we have is a set of possible worlds from which no further structure can be recovered. It is thus mysterious how the semantic value of a that-clause could be a structured proposition even though the semantic value of the embedded sentence is just a set of possible worlds. In this talk I argue that we can solve the mystery by introducing a new kind of operator, which I call an operator of structural enrichment, and I offer a recursive semantics for a language containing such an operator. The resulting semantics vindicates Cresswell&#39;s (1985) claim that unembedded sentences denote sets of possible worlds and that-clauses denote structured propositions, and the general use of structured propositions in contemporary semantic theory.</p>
+	</div>
+	</li>
+	<li>Communication and indifference (<a>Abstract</a>)
+	<div>
+	<p><br />
+	According to a standard view of communication, every assertoric utterance of an indicative sentence expresses a proposition; communication by means of such an utterance is successful only if the audience knows what proposition(s) the speaker expressed. This view entails that, for every assertoric utterance of an indicative sentence, there is a proposition the audience must know to have been expressed in order for communication to succeed. According to a recent objection by Ray Buchanan, because the linguistic meaning of certain sentences involving quantifiers and definite descriptions underdetermines which proposition the utterance expresses, oftentimes there is no particular proposition the audience must know to have been expressed in order for communication to be successful. This paper shows how the standard theorist can use the resources of situation semantics to argue that the linguistic meaning of the sentences in question fully determines a unique proposition, thus resisting the underdeterminacy claim. However, the standard view is subject to a further challenge: to explain what it is about knowing which exact proposition(s) the speaker expressed that makes a difference to communicative success. Given that some communicative goals can be achieved even if the audience is not in a position to know what proposition(s) the speaker expressed, this challenge turns out to be quite pressing.</p>
+	</div>
+	</li>
+</ul>
+&nbsp;
+
+<h1 class="header" id="teaching">Teaching</h1>
+
+<ul id="abstract">
+	<li>Central Problems of Philosophy, Summer 2015 (<a href="/teaching/central-problems/Syllabus.pdf">Syllabus</a>) (<a>Lecture notes</a>)
+
+	<div>
+	<ul class="courses">
+		<li class="page"><a href="/teaching/central-problems/lecture1.html">1. Introduction</a> (<a href="teaching/central-problems/lecture1.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture2.html">2. The human good</a> (<a href="teaching/central-problems/lecture2.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture3.html">3. Aristotle&#39;s account of the good</a> (<a href="teaching/central-problems/lecture2.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture4.html">4. Virtue</a> (<a href="teaching/central-problems/lecture4.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture5.html">5. Varieties of consequentialism</a> (<a href="teaching/central-problems/lecture5.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture6.html">6. Railton: Alienation, consequentialism, and the demands of morality</a> (<a href="teaching/central-problems/lecture6.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture7.html">7. Wolf and Nagel on the meaning of life</a> (<a href="teaching/central-problems/lecture7.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture8.html">8. Is death bad?</a> (<a href="teaching/central-problems/lecture8.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture9.html">9. Williams on the tedium of immortality</a> (<a href="teaching/central-problems/lecture9.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture10.html">10. Locke on personal identity</a> (<a href="teaching/central-problems/lecture10.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture11.html">11. Moore on personal identity (1)</a> (<a href="teaching/central-problems/lecture11.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture12.html">12. Moore on personal identity (2)</a> (<a href="teaching/central-problems/lecture12.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture13.html">13. Frege on sense and reference (1)</a> (<a href="teaching/central-problems/lecture13.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture14.html">14. Frege on sense and reference (2)</a> (<a href="teaching/central-problems/lecture14.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture15.html">15. Russell on definite descriptions</a> (<a href="teaching/central-problems/lecture15.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture16.html">16. Kripke&#39;s objections to Russell&#39;s theory of names</a> (<a href="teaching/central-problems/lecture16.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture17.html">17. Perry on De Se belief attributions</a> (<a href="teaching/central-problems/lecture17.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture18.html">18. Substance Dualism</a> (<a href="teaching/central-problems/lecture18.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/central-problems/lecture19.html">19. An argument against dualism; the Turing test</a> (<a href="teaching/central-problems/lecture19.pdf">PDF</a>)</li>
+	</ul>
+	</div>
+	</li>
+	<li>Philosophy of Mind, Summer 2014 (<a id="">Syllabus</a>) (<a>Lecture notes</a>)
+	<div>
+	<ul class="courses">
+		<li class="page"><a href="/teaching/philmind/lecture1.html">1. What is philosophy of mind?</a> (<a href="teaching/philmind/lecture1.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture2.html">2. Substance dualism (1)</a> (<a href="teaching/philmind/lecture2.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture3.html">3. Substance dualism (2)</a> (<a href="teaching/philmind/lecture2.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture4.html">4. Identity theory</a> (<a href="teaching/philmind/lecture4.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture5.html">5. An argument against dualism and the Turing test</a> (<a href="teaching/philmind/lecture5.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture6.html">6. Behaviorism</a> (<a href="teaching/philmind/lecture6.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture7.html">7. Introducing functionalism</a> (<a href="teaching/philmind/lecture7.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture8.html">8. More on machine functionalism</a> (<a href="teaching/philmind/lecture8.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture9.html">9. David Lewis: Psychophysical and theoretical identifications</a> (<a href="teaching/philmind/lecture9.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture10.html">10. Block&#39;s objections to functionalism</a> (<a href="teaching/philmind/lecture10.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture11.html">11. Lewis defends commonsense functionalism</a> (<a href="teaching/philmind/lecture11.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture12.html">12. Mental causation</a> (<a href="teaching/philmind/lecture12.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture13.html">13. Intentionality as the mark of the mental</a> (<a href="teaching/philmind/lecture13.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture14.html">14. Dretske: A recipe for thought</a> (<a href="teaching/philmind/lecture14.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture15.html">15. Millikan: Biosemantics</a> (<a href="teaching/philmind/lecture15.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture16.html">16. Inferentialism</a> (<a href="teaching/philmind/lecture16.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture17.html">17. Tying it up: thoughts and intentionality</a> (<a href="teaching/philmind/lecture17.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture18.html">18. Propositional attitudes and the language of thought</a> (<a href="teaching/philmind/lecture18.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture19.html">19. The intentional strategy</a> (<a href="teaching/philmind/lecture19.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture20.html">20. Eliminative materialism</a> (<a href="teaching/philmind/lecture20.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture21.html">21. Nagel on conscious experience</a> (<a href="teaching/philmind/lecture21.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture22.html">22. The knowledge argument</a> (<a href="teaching/philmind/lecture22.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture23.html">23. Loar&#39;s response to the knowledge argument</a> (<a href="teaching/philmind/lecture23.pdf">PDF</a>)</li>
+		<li class="page"><a href="/teaching/philmind/lecture24.html">24. The extended mind</a> (<a href="teaching/philmind/lecture24.pdf">PDF</a>)</li>
+	</ul>
+	</div>
+	</li>
+</ul>
+&nbsp;
+
+<h1 class="header" id="random">Random</h1>
+
+<h2>Blindit, a blinding script</h2>
+
+<p>I used to ask my students to blind their papers by naming their file with just their university ID numbers. Unfortunately, at some point I started to accidentally memorize the ID numbers, which defeated the point of blinding the papers in the first place. That&#39;s when I wrote <em>blindit</em>.</p>
+
+<p>Blindit is a bash script. It takes all the files in a given folder and renames them with arbitrary numbers. Once the grading is done, you can run blindIt again to assign each file its original name. You can download blindIt <a href="/software/blindIt.zip">here</a> and consult the instructions for usage and installation <a href="/software/README.txt">here</a>.</p>
+
+<p>For the time being, blindit runs only on Linux and Mac, but I suspect it can be run on Windows using <a href="http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">this</a>. If you&#39;re using OS X El Capitan or newer, you may have problems with the installation script. I&#39;ll fix those problems if there is interest.</p>
+
+<h2>A cat</h2>
+
+<p>I don&#39;t own the rights for this photo, so let me know if you know whom I should credit.</p>
+
+<p><img alt="A cat" border="0" src="/random/cattattoo.jpg" /></p>
+<br />
+<br />
+&nbsp;
+<div id="footer"><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" style="border-width:0" /></a>
+
+<p>All contents by <a href="mailto:martin.abreu@nyu.edu" property="cc:Martín Abreu Zavaleta" rel="cc:martinabreu.net" xmlns:cc="http://creativecommons.org/ns#">martin.abreu@nyu.edu</a></p>
+</div>
+</div>
+</body>
+</html>

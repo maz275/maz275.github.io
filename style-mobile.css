@@ -1,0 +1,215 @@
+@CHARSET "ISO-8859-1";
+/* ----------------------------- General ------------------------------ */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body
+{ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+  font-size: 1.2em;
+  background: white;
+  color: #555;}
+
+p
+{ margin:0px;
+  padding: 0 0 16px;
+  line-height:1.5em;
+  z-index: 1000;
+}
+
+
+h1
+{ color: #362C20;
+  font: normal 150% "Helvetica Neue Light", Helvetica;
+  position: relative;
+}
+
+h2 {
+	color: #362C20;
+	font: normal 130% "Helvetica Neue Light", Helvetica;
+}
+
+ul
+{ margin: 2px 0 18px 16px;
+	padding: 0;
+	list-style: disc;
+}
+
+ul li div
+{ display:none;
+}
+
+
+.center
+{ display:block;
+  text-align: center;
+}
+
+.alternate_color
+{ color: #5C8A8A;
+}
+
+
+/* ------------------------------- Header --------------------------------*/
+#logo
+{ width: 80%;
+  background-color: black;
+  height: 5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+#logo_text 
+{ top: 0;
+  bottom: 0;
+  left:0;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+#logo h1
+{ font: normal 150% "Helvetica Neue Light", Helvetica, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  letter-spacing: 0.06em;
+  padding-top:12px;
+  color: #FFF;
+  margin: 0;}
+
+@media screen and (min-width: 412px) {
+	#logo h1{
+		padding-top: 0.8em;
+		padding-left: 0.1em;
+		z-index: 1000;
+	}
+}
+
+/* ---------------------------- Menu bar -------------------------------- */
+nav {
+  text-align: center;
+  width: 20%;
+  height: 5em;
+  max-height: 6em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  background-image: url(mobile-menu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index:1000;
+}
+
+#menu-icon {
+	display: inline-block;
+}
+
+nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #4C4C4C;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 100%;
+		border-radius: 4px 0 4px 4px;
+		text-decoration: none;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+		list-style: none;
+		text-decoration: none;
+	}
+
+	nav:hover ul {
+		display: block;
+		text-decoration:none;
+	}
+
+	nav a:hover{
+		color: #5C8A8A;
+		text-decoration:none;
+		border:none;
+	}
+
+.active {
+  color: #5C8A8A;
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ---------------------------- Content --------------------------------- */
+.site_content
+{   width: 96%;
+	margin: 7em auto;
+	font-size: 85%;
+	padding-left: 0.2em;
+} 
+
+.site_content li {
+	line-height:1.7em;
+}
+
+ul.courses {
+	list-style: none;
+	margin-left: auto;
+}
+
+.site_content h1:before {
+	display: block;
+	content: " ";
+	margin-top: -4em;
+	height: 4em;
+	visibility: hidden;
+	pointer-events:all;
+}
+
+.site_content h1{
+	pointer-events:none;
+}
+
+.site_content h1:before a{
+  border-bottom: 1px dotted;
+  color: #444;
+  outline: none;
+  text-decoration: none;
+
+}
+
+.site_content a, a:hover
+{ border-bottom: 1px dotted;
+  color: #444;
+  outline: none;
+  text-decoration: none;
+}
+
+.site_content a:hover
+{ border-bottom: 1px solid;
+}
+
+/* --------------------------- FOOTER ------------------------------------*/
+#footer { 
+  text-align: center;
+  position: relative;
+  bottom: 0;
+} 
