@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lounge Planner — Quick Reference</title>
+<style>
+  :root{
+    --ink:#1f2933; --ink-soft:#4b5563; --muted:#6b7280; --faint:#9aa3af;
+    --paper:#fcfcf8; --app:#e9ebe7; --panel:#ffffff; --line:#d8dbd6; --line-soft:#e7e9e6;
+    --blue:#2563eb; --amber:#d97706; --red:#dc2626; --green:#3f7d5c;
+    --mono:ui-monospace,"SF Mono","Roboto Mono",Menlo,Consolas,monospace;
+    --sans:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--app);color:var(--ink);font-family:var(--sans);
+    font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .sheet{max-width:820px;margin:24px auto;background:var(--paper);border:1px solid var(--line);
+    box-shadow:0 2px 14px rgba(0,0,0,.06);padding:30px 34px 36px}
+
+  header.head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
+    border-bottom:2px solid var(--ink);padding-bottom:12px;margin-bottom:8px}
+  .title .t{font-family:var(--serif);font-size:27px;line-height:1;letter-spacing:.2px}
+  .title .s{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+  .head .meta{font-family:var(--mono);font-size:10.5px;color:var(--muted);text-align:right;max-width:230px}
+  .open-btn{display:inline-block;font-family:var(--sans);font-size:13px;text-decoration:none;
+    background:var(--ink);color:#fff;border-radius:7px;padding:8px 14px;white-space:nowrap}
+  .open-btn:hover{background:#000}
+  .metanote{margin-top:6px;font-size:10px;color:var(--faint)}
+  .lede{color:var(--ink-soft);font-size:13.5px;margin:12px 0 4px}
+  .lede b{color:var(--ink)}
+
+  section{padding:16px 0;border-bottom:1px solid var(--line-soft)}
+  section:last-of-type{border-bottom:0}
+  .eyebrow{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);
+    font-weight:600;margin:0 0 3px}
+  h2{font-family:var(--serif);font-size:18px;margin:0 0 10px;font-weight:600}
+  p{margin:0 0 9px}
+  ul{margin:0 0 4px;padding-left:0;list-style:none}
+  li{position:relative;padding-left:16px;margin:6px 0;color:var(--ink-soft)}
+  li::before{content:"";position:absolute;left:2px;top:8px;width:5px;height:5px;border-radius:1px;
+    background:var(--faint)}
+  li b,li strong{color:var(--ink)}
+  ol.steps{margin:0;padding:0;list-style:none;counter-reset:s}
+  ol.steps li{counter-increment:s;padding-left:30px;margin:9px 0;color:var(--ink)}
+  ol.steps li::before{content:counter(s);top:-1px;left:0;width:19px;height:19px;border-radius:50%;
+    background:var(--ink);color:#fff;font-family:var(--mono);font-size:11px;font-weight:600;
+    display:flex;align-items:center;justify-content:center}
+  kbd{font-family:var(--mono);font-size:11px;background:#fff;border:1px solid var(--line);
+    border-bottom-width:2px;border-radius:4px;padding:1px 5px;color:var(--ink);white-space:nowrap}
+  code{font-family:var(--mono);font-size:12px;background:var(--line-soft);border-radius:3px;padding:1px 5px}
+
+  .callout{background:#fff;border:1px solid var(--amber);border-left:4px solid var(--amber);
+    border-radius:8px;padding:12px 15px;margin:6px 0 2px}
+  .callout .k{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);font-weight:700}
+  .callout p{margin:4px 0 0;color:var(--ink)}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:6px 26px}
+  .keys{border-collapse:collapse;width:100%;margin-top:4px}
+  .keys td{padding:5px 0;border-bottom:1px solid var(--line-soft);vertical-align:top}
+  .keys td:first-child{width:130px;white-space:nowrap}
+  .keys td:last-child{color:var(--ink-soft)}
+
+  .dot{display:inline-block;width:9px;height:9px;border-radius:2px;vertical-align:baseline;margin-right:5px}
+  .swatchrow{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:6px}
+  .swatchrow span{font-size:12.5px;color:var(--ink-soft)}
+
+  footer{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);
+    font-size:11px;color:var(--faint);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+  @media (max-width:640px){.sheet{padding:20px 18px 26px;margin:0}.grid2{grid-template-columns:1fr}
+    header.head{flex-direction:column;align-items:flex-start}.head .meta{text-align:left}}
+  @media print{
+    body{background:#fff;font-size:11.5px}
+    .sheet{box-shadow:none;border:0;margin:0;max-width:none;padding:0}
+    section{padding:11px 0;break-inside:avoid}
+    .callout,li,tr{break-inside:avoid}
+    h2{font-size:15px}.title .t{font-size:22px}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="head">
+    <div class="title">
+      <div class="t">Lounge Planner</div>
+      <div class="s">Quick reference · Syracuse Philosophy</div>
+    </div>
+    <div class="meta">
+      <a class="open-btn" href="./">Open the planner →</a>
+      <div class="metanote">Works in any browser · best on laptop/desktop</div>
+    </div>
+  </header>
+
+  <p class="lede">A drag-and-drop floor planner for the department lounge. Arrange furniture to scale,
+  see how many people fit, and share layouts with the group. <b>This card is ordered
+  most-important first</b> — the last section is purely nice-to-have.</p>
+
+  <section>
+    <p class="eyebrow">Start here</p>
+    <h2>Three steps to your first layout</h2>
+    <ol class="steps">
+      <li><b>Add furniture.</b> Click any item in the left panel (sofas, tables, chairs, and so on).
+        It drops into the middle of the room.</li>
+      <li><b>Place it.</b> Drag the piece where you want it. Drop in as many as you like.</li>
+      <li><b>Adjust it.</b> Click a piece to select it, then use the panel on the right to rename, resize,
+        rotate, set how many it seats, or delete it.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="callout">
+      <span class="k">Most important thing to know</span>
+      <p><b>The tool does not autosave, and closing the tab clears your work.</b> Treat <b>Export</b> as
+      “Save”: before you close, export your layout (see <i>Save &amp; share</i> below). One quick export and
+      it’s safe.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Everyday editing</p>
+    <h2>Working with a piece</h2>
+    <div class="grid2">
+      <ul>
+        <li><b>Move</b> — drag it.</li>
+        <li><b>Resize</b> — drag any corner handle.</li>
+        <li><b>Rotate</b> — drag the round handle above it, or use <b>Rotate 90°</b>.</li>
+        <li><b>Rename / seats / size</b> — type in the right-hand panel.</li>
+      </ul>
+      <ul>
+        <li><b>Duplicate</b> or <b>Delete</b> — buttons in the right-hand panel.</li>
+        <li><b>Lock</b> — stops a piece from moving. The mailboxes are locked by default; select and
+          untick <b>Locked</b> to move them.</li>
+        <li><b>Snap to grid</b> — toggle at top-left of the room. Each grid square is <b>1 ft</b>.</li>
+      </ul>
+    </div>
+    <table class="keys">
+      <tr><td><kbd>R</kbd></td><td>Rotate the selected piece 90°</td></tr>
+      <tr><td><kbd>Delete</kbd></td><td>Remove the selected piece</td></tr>
+      <tr><td><kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>D</kbd></td><td>Duplicate the selected piece</td></tr>
+      <tr><td>Arrow keys</td><td>Nudge a piece; hold <kbd>Shift</kbd> to move a full foot</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <p class="eyebrow">Save &amp; share</p>
+    <h2>Getting layouts to each other</h2>
+    <p>Use the <b>Export</b> menu (top-right). There are two kinds of output:</p>
+    <ul>
+      <li><b>Pictures</b> — <b>PNG</b> or <b>SVG</b>. Best for dropping into an email or a meeting agenda.
+        Each picture includes a title block, a scale bar, and a legend, so it explains itself to anyone who
+        has never opened the tool.</li>
+      <li><b>Editable copies</b> — a <b>share code</b> (copies to your clipboard) or a <b>.json file</b>.
+        Send either to a colleague; they open <b>Load…</b> and paste the code or pick the file to keep
+        editing it.</li>
+    </ul>
+    <p>Every file names itself automatically as <code>title-author-timestamp</code>, so fill in the
+    <b>Title</b> and <b>Author</b> boxes at the top before exporting. Suggested workflow for the group:
+    <b>keep everyone’s <code>.json</code> files in one shared Drive folder</b> — the names will sort and
+    stay tidy on their own.</p>
+  </section>
+
+  <section>
+    <p class="eyebrow">Reading the room</p>
+    <h2>What the drawing is telling you</h2>
+    <ul>
+      <li>The <b>room itself is fixed</b> — walls, windows, the two doors and their swings, the hallway
+        openings, the air vent, and the mailboxes are all built in and drawn to scale.</li>
+      <li><span class="dot" style="background:var(--red)"></span><b>Red outline = a conflict.</b> The piece
+        overlaps another, pokes into a wall, or blocks a door, hallway, or the vent. Overlaps are allowed —
+        the tool just flags them so nothing hides by accident.</li>
+      <li><span class="dot" style="background:var(--blue)"></span><b>Blue dashed zones</b> mark clearance at
+        doors and hallways; <span class="dot" style="background:var(--amber)"></span><b>amber</b> marks the
+        vent keep-clear. Toggle them with <b>Clearances</b>.</li>
+      <li>Not sure what a symbol means? Open <b>Legend</b> (in the toolbar, or the panel on the right) for a
+        full key and the scale.</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="eyebrow">How many fit</p>
+    <h2>The capacity estimate</h2>
+    <p>The panel at the top-right updates live as you work:</p>
+    <ul>
+      <li><b>Seated</b> counts the seats on the seating you’ve placed. <b>Standing</b> estimates how many can
+        mingle in the leftover open floor. <b>Total</b> adds the two.</li>
+      <li>Set the <b>standing comfort</b> — <b>Tight / Standard / Relaxed</b> — to match the event, from a
+        packed post-talk reception to a casual afternoon.</li>
+      <li>This is a comfort estimate for planning, <b>not a fire-code occupancy limit</b>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="eyebrow">Nice to have</p>
+    <h2>Everything else, once you’re comfortable</h2>
+    <ul>
+      <li><b>Several layouts at once</b> — use <b>New</b> and the <b>Layout</b> menu to keep alternatives
+        side by side, then <b>Compare…</b> to view two or three together with their seat and area counts.</li>
+      <li><b>Notes</b> — click <b>＋ Note</b>, then click the plan to drop a label (“coffee station here”).
+        Double-click a note to edit or remove it.</li>
+      <li><b>Tidy the view</b> — <b>Grid</b>, <b>Clearances</b>, <b>Legend</b>, and <b>Tally</b> each toggle
+        on and off, so you can strip the canvas down to just the furniture when you want to focus.</li>
+      <li><b>Custom pieces</b> — <b>Custom block…</b> at the bottom of the catalog lets you type exact
+        dimensions for anything not in the list.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>Lounge Planner · Syracuse Philosophy · <a href="./" style="color:var(--blue);text-decoration:none">Open the planner →</a></span>
+    <span>Tip: bookmark this page, or print it to PDF with ⌘/Ctrl-P.</span>
+  </footer>
+
+</div>
+</body>
+</html>
