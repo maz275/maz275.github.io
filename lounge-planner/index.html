@@ -290,6 +290,8 @@ function roomMarkup(){
   s+=`<rect x="${IX1}" y="292.75" width="4" height="15.5" fill="${AMBER}"/>`;
   // switches on left wall
   s+=`<rect x="${IX0}" y="312.5" width="4" height="5" fill="${AMBER}"/>`;
+  // heating vent on top wall: x 25 -> 125.5 (register on inner face; 12in overlap onto each end window)
+  s+=`<rect x="25" y="${IY0}" width="100.5" height="2.5" fill="${AMBER}"/>`;
   return s;
 }
 function gridMarkup(){
@@ -306,6 +308,7 @@ const ZONES=[
   {label:"hall",  kind:"circ",  x:5,   y:11,    w:30,  h:57.25},
   {label:"hall",  kind:"circ",  x:120, y:187,   w:30,  h:40},
   {label:"vent",  kind:"vent",  x:135, y:292.75,w:15,  h:15.5},
+  {label:"vent",  kind:"vent",  x:25,  y:5,     w:100.5,h:15},
 ];
 function zonesMarkup(){
   return ZONES.map(z=>{
